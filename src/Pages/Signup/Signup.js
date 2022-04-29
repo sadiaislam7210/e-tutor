@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "./Signup.css";
 import google from "../../images/g-logo.png";
+
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
@@ -10,6 +11,8 @@ import GoogleSignIn from "../GoogleSignIn/GoogleSignIn";
 const Signup = () => {
     const navigate = useNavigate();
   const [isChacked, setIsChacked] = useState(false);
+  
+
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const handelForm = (e) => {

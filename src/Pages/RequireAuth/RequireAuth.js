@@ -1,35 +1,35 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Navigate, useLocation } from "react-router-dom";
+import { useSendEmailVerification } from 'react-firebase-hooks/auth';
 import auth from "../../firebase.init";
-import google from "../../images/g-logo.png";
-
-const GoogleSignIn = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
-    let from = location.state?.from?.pathname || '/';
-    const [signInWithGoogle, user, loadingGoogle, errorGoogle] = useSignInWithGoogle(auth);
-    if (user) {
-        navigate(from, {replace: true });
-      }
-  return (
-    <div>
-      <p className="text-danger text-center mt-1">{errorGoogle?.message}</p>
-      <div className="separator d-flex align-items-center">
-        <div className="w-100 line mx-3"></div>
-        <span className="orange">Or</span>
-        <div className="w-100 line mx-3"></div>
+const RequireAuth = ({ children }) => {
+  const [user, loading, error] = useAuthState(auth);
+  const location = useLocation();
+  const [sendEmailVerification, sending, error1] = useSendEmailVerification(auth);
+  console.log(user);
+  if (!user) {
+    return <Navigate to="/login" state={{ from: location }} replace></Navigate>;
+  }
+  if (!user.emailVerified) {
+    return (
+      <div className=" justify-content-center align-items-center">
+        <h3 className="text-danger">Your email is not verified</h3>
+        <h5 className="text-success">Please verify your email address</h5>
+        <button
+          className="btn btn-primary"
+          onClick={async () => {
+            await sendEmailVerification();
+            alert("Sent email");
+          }}
+        >
+          Send Verification
+        </button>
+        
       </div>
-
-      <div className="pop-up-authorize my-3 d-flex justify-content-center">
-        <Button onClick={() => signInWithGoogle()}>
-          <img src={google} height={40} className="rounded-3 me-3" alt="" />
-          <span>Sign in with Google</span>
-        </Button>
-      </div>
-    </div>
-  );
+    );
+  }
+  return children;
 };
 
-export default GoogleSignIn;
+export default RequireAuth;
