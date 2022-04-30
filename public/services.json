@@ -1,4 +1,4 @@
-
+[
 {
   "id": 1,
   "name": "ICT",
@@ -27,3 +27,18 @@
   "img": "https://i.ibb.co/wp5Wh5s/image.png",
   "text": "Individuals will learn to use Microsoft Phrase to produce professional-looking documents. Features integrated are typing, format, editing, document space, margins, page numbering and saving a document."
 },
+{
+  "id": 5,
+  "name": "MS Excel",
+  "prices": 2000,
+  "img": "https://5.imimg.com/data5/KO/UM/GLADMIN-66275087/ms-excel-basic-computer-courses-500x500.png",
+  "text": "This particular training provides all of the tools necessary in order to create and make use of basic spreadsheets. Individuals should receive an summary of the user interface and learn the particular various techniques for getting into and editing information. Additionally, participants will certainly learn the numerous ways to create easy formulas."
+},
+{
+  "id": 6,
+  "name": "Data Structures & Algorithms",
+  "prices": 15000,
+  "img": "https://i.ibb.co/TcjQ97H/image.png",
+  "text": "A summary of data framework concepts, arrays, collection, queues, trees, and graphs. Discussion of various implementations of these data items, programming styles, and run-time representations. Program also examines methods for sorting, looking and some chart algorithms."
+}
+]
