@@ -13,3 +13,17 @@
   "img": "https://i.ibb.co/3ChD4Mw/image.png",
   "text": "Issues in mathematics that many educated person should know to process, evaluate, and understand the numerical and graphical information in our society."
 },
+{
+  "id": 3,
+  "name": "Physics",
+  "prices": 4000,
+  "img": "https://i.ibb.co/wBpspLF/image.png",
+  "text": "A great intro to the scientific method and some major in physics, including makes and motion, energy, gravity, electricity and magnetism, thermodynamics, and optics. Hands-on activities and projects are an important part of this course which aims to prepare future teachers to bring research activities to their classes. 3 lecture hrs and 1 75-minute activity period."
+},
+{
+  "id": 4,
+  "name": "MS Word",
+  "prices": 2000,
+  "img": "https://i.ibb.co/wp5Wh5s/image.png",
+  "text": "Individuals will learn to use Microsoft Phrase to produce professional-looking documents. Features integrated are typing, format, editing, document space, margins, page numbering and saving a document."
+},
