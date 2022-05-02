@@ -1,6 +1,6 @@
 # E-Tutor
 
- [live site](https://e-tutor-8617c.firebaseapp.com/).
+ [live site: https://e-tutor-8617c.firebaseapp.com/](https://e-tutor-8617c.firebaseapp.com/) .
  
  ## About project feature
  
