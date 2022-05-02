@@ -51,15 +51,15 @@ const Home = () => {
         <h1 className="text-center ">Benefit</h1>
         <div className="container m-auto p-3 d-flex justify-content-evenly">
           <ul>
-            <li className="my-4">Easy to learn</li>
-            <li className="my-4">You can use your Phone</li>
-            <li className="my-4">Live Class</li>
-            <li className="my-4">Recorded Video</li>
+            <li className="my-4 text-start">Easy to learn</li>
+            <li className="my-4 text-start">You can use your Phone</li>
+            <li className="my-4 text-start">Live Class</li>
+            <li className="my-4 text-start">Recorded Video</li>
           </ul>
           <ul>
-            <li className="my-4">Provide PDF</li>
-            <li className="my-4">Provide Notes</li>
-            <li className="my-4">Anytime Support</li>
+            <li className="my-4 text-start">Provide PDF</li>
+            <li className="my-4 text-start">Provide Notes</li>
+            <li className="my-4 text-start">Anytime Support</li>
           </ul>
         </div>
       </div>

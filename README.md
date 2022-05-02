@@ -1,13 +1,30 @@
 # E-Tutor
 
  [live site](https://e-tutor-8617c.firebaseapp.com/).
- ## About project
- - This is a E-Tutor site.Where one can learn anytime in anywhere.
- - 
+ 
+ ## About project feature
+ 
+ - Login System
+- Sign Up with Email, Google
+- Protected Route
+- and also using:
+  - JSON
+  - Card
+  - Bootstrap Grid
+  - React Route
+  - Simple UI
+- Show Top 3 Services in home page
 
-## using function
-- use react bootstrap
-- use bootstrap
-- use react router dom
-- use react firebase hook
+
+## Technologies ((frameworks, libraries))
+- Created by React.js.
+- using React DOM.
+- For responsive using React Bootstrap.
+- Conditional Rendering. etc.
+- React Router Dom
+- Firebase
+- Firebase Hosting
+- React-Toastify
+- React Firebase Hooks
+ETC...
 
